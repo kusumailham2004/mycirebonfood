@@ -88,7 +88,7 @@ header nav .navmenu .navitem .active:hover{
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #0E185F;
-    color: white;
+    color: transparent;
 }
 @media screen and (max-width:768px) {
     .hamburger{
@@ -134,8 +134,6 @@ header nav .navmenu .navitem .active:hover{
         left: 0;
     }
 }
-
-
 
 
 
@@ -510,7 +508,7 @@ header nav .navmenu .navitem .active:hover{
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-.active, .dot:hover{
+.activeslide, .dot:hover{
     background-color: #0E185F;
 }
 q{
@@ -709,6 +707,7 @@ footer .container .berlangganan input{
     border: none;
     background-color: transparent;
     border: 1px solid white;
+    color: white;
 }
 footer .container .berlangganan input::placeholder{
     color: white;
