@@ -126,7 +126,7 @@ header nav .navmenu .navitem .active:hover{
     text-decoration: none;
     display: block;
 }
-.dropdown-content a:focus{
+.dropdown-content a:hover{
     background-color: #ddd;
 }
 .show{
@@ -413,7 +413,6 @@ header nav .navmenu .navitem .active:hover{
     flex-direction: row;
 }
 .top-kuliner .container-top-kuliner .row-top-kuliner .card-top-kuliner{
-    
     width: auto;
     display: flex;
     justify-content: center;
@@ -490,7 +489,7 @@ header nav .navmenu .navitem .active:hover{
 .slideshow-container{
     width: 70%;
     position: relative;
-    height: 250px;
+    height: 300px;
     border-radius: 10px;
     
     background: rgba(255, 255, 255, 0.29);
@@ -506,6 +505,14 @@ header nav .navmenu .navitem .active:hover{
 .slide-testi p{
     font-size: 20px;
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slide-testi .akun-user{
+    text-align: center;
+    color: #1a288f;
+    font-size: 25px;
+    font-weight: bold;
 }
 .slide-testi .user-testi{
     width: 90px;
@@ -680,7 +687,6 @@ footer{
     width: 100%;
     height: auto;
     padding-top: 50px;
-    padding-bottom: 50px;
     color: white;
 }
 footer .container{
@@ -688,6 +694,7 @@ footer .container{
     display: flex;
     justify-content: space-evenly;
     align-items: top;
+    padding-bottom: 30px;
 }
 footer .container .kontak-kami{
     width: 20%;
@@ -729,6 +736,8 @@ footer .container .lokasi .kab-kota{
 }
 footer .container .lokasi .kab-kota .kab-cirebon h5{
     font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 footer .container .lokasi .kab-kota li a{
     color: white;
@@ -764,14 +773,14 @@ footer .container .berlangganan input::placeholder{
     color: white;
 }
 footer .container .berlangganan button{
-    width: 40%;
+    width: 30%;
     margin-top: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
     letter-spacing: 2px;
 
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 17px;
+    font-weight: normal;
     letter-spacing: 2px;
 
     background-color: #2FA4FF;
@@ -784,6 +793,18 @@ footer .container .berlangganan button:hover{
     background-color: #1f7dc5;
     color: white;
     border: none;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    background-color: #0E185F;
+    border-top: 1px solid #E8FFC2;
+}
+.copyright p{
+    font-size: 18px;
 }
 @media screen and (max-width: 768px){
     footer .container{
