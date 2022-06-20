@@ -1,6 +1,21 @@
+const makeNavLinksSmooth = ( ) => {
+    const navLink = document.querySelectorAll( 'nav ul li a' );
+  
+    for ( let n in navLinks ) {
+      if ( navLink.hasOwnProperty( n ) ) {
+        navLink[ n ].addEventListener( 'click', e => {
+          e.preventDefault( );
+          document.querySelector( navLink[ n ].hash )
+            .scrollIntoView( {
+              behavior: "smooth"
+            } );
+        } );
+      }
+    }
+  }
+
 const hamburger = document.querySelector(".hamburger");
 const navmenu = document.querySelector(".navmenu");
-
 
 hamburger.addEventListener("click", () =>{
     hamburger.classList.toggle("active");

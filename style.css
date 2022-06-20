@@ -19,7 +19,7 @@ header nav ul li a{
     color: white;
 }
 header nav{
-    
+    width: 100%;
     min-height: 70px;
     display: flex;
     justify-content: space-around;
@@ -32,9 +32,9 @@ header nav{
 .navmenu{
     width: 50%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     right: 0;
-    gap: 40px;
+    gap: 10px;
 }
 .navitem{
     font-size: 1rem;
@@ -48,6 +48,9 @@ header nav .navmenu .navitem .active{
 }
 .navbranding{
     font-size: 2rem;
+}
+.navbranding img{
+    width: 220px;
 }
 .navlink{
     transition: 0.5s ease;
@@ -113,7 +116,7 @@ header nav .navmenu .navitem .active:hover{
 }
 .dropdown-content{
     display: none;
-    width: 90%;
+    width: 100%;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
@@ -131,9 +134,19 @@ header nav .navmenu .navitem .active:hover{
 }
 .show{
     display: block;
-
+    margin-left: auto;
+    margin-right: auto;
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:850px) {
+    .dropbtn{
+        width: 70%;
+    }
+    header nav .navmenu .navitem .active{
+        width: 100%;
+    }
+    .navlink{
+        width: 100%;
+    }
     .hamburger{
         display: block;
     }
@@ -152,6 +165,7 @@ header nav .navmenu .navitem .active:hover{
         top: 70px;
         gap: 0;
         flex-direction: column;
+        margin-top: 3%;
         
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -227,11 +241,12 @@ header nav .navmenu .navitem .active:hover{
 }
 .halaman1 .container .content h1{
     font-size: 55px;
-    
     text-align: left;
 }
 .halaman1 .container .content p{
     font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -353,6 +368,7 @@ header nav .navmenu .navitem .active:hover{
 }
 .halaman3 .container3 .row3 .card3 p{
     font-size: 20px;
+    margin-top: 10px;
 }
 .halaman3 .container3 .row3 .card3 img{
     width: 100px;
@@ -452,7 +468,9 @@ header nav .navmenu .navitem .active:hover{
     .top-kuliner .container-top-kuliner .row-top-kuliner .card-top-kuliner .img-makanan{
         width: 150px;
     }
-
+    .top-kuliner .container-top-kuliner .row-top-kuliner .card-top-kuliner {
+        padding: 10px;
+    }
     .top-kuliner .container-top-kuliner .row-top-kuliner .card-top-kuliner .card-top-kuliner-h1{
         font-size: 25px;
     }
@@ -805,6 +823,7 @@ footer .container .berlangganan button:hover{
 }
 .copyright p{
     font-size: 18px;
+    text-align: center;
 }
 @media screen and (max-width: 768px){
     footer .container{
