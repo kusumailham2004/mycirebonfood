@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@500&display=swap');
+/* font-family: 'Noto Sans Display', sans-serif; */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid yellow; */
     scroll-behavior: smooth;
 }
+
+
+/* header start */
 header{
     background-color: #E8FFC2;
     position: sticky;
@@ -53,6 +58,7 @@ header nav .navmenu .navitem .active{
     width: 220px;
 }
 .navlink{
+    font-family: 'Noto Sans Display', sans-serif;
     transition: 0.5s ease;
     background: #0E185F;
     width: 100%;
@@ -66,6 +72,7 @@ header nav .navmenu .navitem .active{
     background-color: #2FA4FF;
 }
 header nav .navmenu .navitem .active{
+    font-family: 'Noto Sans Display', sans-serif;
     transition: 0.5s ease;
     background-color: #2FA4FF;
     width: 100%;
@@ -124,6 +131,7 @@ header nav .navmenu .navitem .active:hover{
     z-index: 1;
 }
 .dropdown-content a{
+    font-family: 'Noto Sans Display', sans-serif;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -187,9 +195,11 @@ header nav .navmenu .navitem .active:hover{
         left: 0;
     }
 }
+/* header end */
 
 
 
+/* halaman1 start */
 .halaman1{
     width: 100%;
     height: auto;
@@ -240,10 +250,12 @@ header nav .navmenu .navitem .active:hover{
     width: 70%;
 }
 .halaman1 .container .content h1{
+    font-family: 'Noto Sans Display', sans-serif;
     font-size: 55px;
     text-align: left;
 }
 .halaman1 .container .content p{
+    font-family: 'Noto Sans Display', sans-serif;
     font-size: 20px;
     margin-top: 10px;
     font-weight: bold;
@@ -270,19 +282,22 @@ header nav .navmenu .navitem .active:hover{
         margin-top: 45px;
     }
 }
+/* halaman1 end */
 
 
 
+/* halaman2 start */
 .halaman2{
     width: 100%;
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .halaman2 h1{
+    margin-top: -5%;
     font-size: 50px;
     font-weight: 800;
     margin-bottom: 40px;
@@ -315,15 +330,15 @@ header nav .navmenu .navitem .active:hover{
         width: 70px;
     }
 }
+/* halaman2 end */
 
 
-
+/* halaman3 start */
 .halaman3{
+    padding-top: 100px;
     height: auto;
     width: 100%;
     background-color: #E8FFC2;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 .halaman3 h1{
     font-size: 50px;
@@ -396,13 +411,16 @@ header nav .navmenu .navitem .active:hover{
         margin-bottom: 10px;
     }
 }
+/* halaman3 end */
 
 
+
+/* top kuliner start */
 .top-kuliner{
     width: 100%;
     height: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    /* padding-bottom: 50px; */
     background-color: #E8FFC2;
     display: flex;
     justify-content: center;
@@ -483,12 +501,12 @@ header nav .navmenu .navitem .active:hover{
         width: 150px;
     }
 }
+/* top kuliner end */
 
 
 /* testimoni start */
 .testimoni{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
     width: 100%;
     height:auto;
     display: flex;
@@ -603,12 +621,14 @@ q{
 /* testimoni end */
 
 
+
+/* myprofile start */
 .myprofile{
     width: 100%;
     height: auto;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding-top: 100px;
     background-color: #E8FFC2;
+    padding-bottom: 50px;
 }
 .myprofile h1{
     text-align: center;
@@ -697,9 +717,11 @@ q{
         margin-right: 10px;
     }
 }
+/* myprofile end */
 
 
 
+/* footer start */
 footer{
     background-color: #0E185F;
     width: 100%;
@@ -859,9 +881,12 @@ footer .container .berlangganan button:hover{
         font-size: 30px;
     }
 }
+/* footer end */
 
 
 
+
+/* back to top button start */
 #myBtn{
     display: none;
     position:fixed;
@@ -883,4 +908,5 @@ footer .container .berlangganan button:hover{
 #myBtn:hover{
     border-bottom: 40px solid #2FA4FF;
 }
+/* back to top button end */
 

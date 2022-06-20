@@ -1,11 +1,11 @@
 const makeNavLinksSmooth = ( ) => {
-    const navLink = document.querySelectorAll( 'nav ul li a' );
+    const navLinks = document.querySelectorAll( 'nav ul li a' );
   
     for ( let n in navLinks ) {
-      if ( navLink.hasOwnProperty( n ) ) {
-        navLink[ n ].addEventListener( 'click', e => {
+      if ( navLinks.hasOwnProperty( n ) ) {
+        navLinks[ n ].addEventListener( 'click', e => {
           e.preventDefault( );
-          document.querySelector( navLink[ n ].hash )
+          document.querySelector( navLinks[ n ].hash )
             .scrollIntoView( {
               behavior: "smooth"
             } );
@@ -13,6 +13,25 @@ const makeNavLinksSmooth = ( ) => {
       }
     }
   }
+  
+  const spyScrolling = ( ) => {
+    const sections = document.querySelectorAll( '.page-scroll' );
+  
+    window.onscroll = ( ) => {
+      const scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+  
+      for ( let s in sections )
+        if ( sections.hasOwnProperty( s ) && sections[ s ].offsetTop <= scrollPos ) {
+          const id = sections[ s ].id;
+          document.querySelector( '.active' ).classList.remove( 'active' );
+          document.querySelector( `a[href*=${ id }]` ).parentNode.classList.add( 'active' );
+        }
+    }  
+  }
+  
+  makeNavLinksSmooth( );
+  spyScrolling( );
+
 
 const hamburger = document.querySelector(".hamburger");
 const navmenu = document.querySelector(".navmenu");
