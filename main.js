@@ -42,9 +42,6 @@ hamburger.addEventListener("click", () =>{
 })
 
 
-
-
-
 mybutton = document.getElementById("myBtn");
     window.onscroll = function() {scrollFunction()};
 
